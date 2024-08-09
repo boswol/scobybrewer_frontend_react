@@ -45,7 +45,7 @@ function FormRegister({ route }) {
             />
             <input
                 className="form-input"
-                type="confirmPassword"
+                type="password"
                 value={confirm_password}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 placeholder="Confirm Password"

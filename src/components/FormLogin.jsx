@@ -40,6 +40,7 @@ function FormLogin({ route, method }) {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 placeholder="Username"
+                autoComplete="username"
             />
             <input
                 className="form-input"
@@ -47,6 +48,7 @@ function FormLogin({ route, method }) {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
+                autoComplete="password"
             />
             {loading && <LoadingIndicator />}
             <button className="form-button" type="submit">Login</button>
